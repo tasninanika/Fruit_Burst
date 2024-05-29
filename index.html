@@ -17,7 +17,7 @@
 </head>
 <body class="font-lato">
     <header class="container lg:w-4/5 mx-auto my-10 lg:my-16 md:my-16">
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-100 lg:bg-[#F85559] rounded-full">
                 <div class="navbar-start">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -30,8 +30,8 @@
                       <li><a>All Fruits</a></li>
                     </ul>
                   </div>
-                <div class="navbar-start hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 text-lg font-medium lg:flex">
+                <div class="navbar-start hidden lg:flex w-96">
+                  <ul class="menu menu-horizontal text-lg font-medium text-white">
                       <li><a>Home</a></li>
                       <li><a>About Us</a></li>
                       <li><a>Shop</a></li>
@@ -40,16 +40,87 @@
                 </div>
             </div>
               <div class="navbar-center">
-                <a class="btn btn-ghost text-4xl font-bold"><img src="images/logo.png" alt="">Fruit Burst</a>
+                <a class="btn btn-ghost text-xl lg:text-4xl font-bold -mt-3 lg:text-white"><img src="images/logo.png" alt="">Fruit Burst</a>
               </div>
-              <div class="navbar-end">
-                <label class="input input-bordered flex items-center rounded-full w-96">
+              <div class="navbar-end pr-3">
+                <label class="input input-bordered lg:flex items-center rounded-full lg:w-80 hidden">
                     <input type="text" class="grow" placeholder="Search" />
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></svg>
                   </label>
               </div>
             </div>
           </div>
+        </div> 
+        <div class="carousel lg:w-full lg:h-full my-14 w-96 h-48 mx-auto">
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="hero lg:h-[500px] w-full mx-auto" style="background-image: url(images/banner1.png);">
+              <img src="images/Rectangle 5.png" alt="" class="w-96 h-48 -mt-64 lg:w-full lg:h-full">
+              <div class="hero-overlay bg-opacity-0"></div>
+              <div class="hero-content text-center text-neutral-content w-full">
+                <div>
+                  <h1 class="lg:-mt-36 mb-1 text-7xl font-extrabold text-[#FFF]">Exotic tastes at your <br> doorstep</h1>
+                  <p class="mb-5 text-xl text-[#F3F3F3]">We supply highly quality organic products</p>
+                  <button class="btn text-xl text-white bg-[#F85559] border-none w-36">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle bg-black border-none">❮</a> 
+              <a href="#slide2" class="btn btn-circle border-none bg-black">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="hero h-[500px]" style="background-image: url(images/banner2.png);">
+              <img src="images/Rectangle 5.png" alt="">
+              <div class="hero-overlay bg-opacity-0"></div>
+              <div class="hero-content text-center text-neutral-content w-full">
+                <div>
+                  <h1 class="-mt-40 mb-1 text-7xl font-extrabold text-[#FFF]">Exotic tastes at your <br> doorstep</h1>
+                  <p class="mb-5 text-xl text-[#F3F3F3]">We supply highly quality organic products</p>
+                  <button class="btn text-xl text-white bg-[#F85559] border-none w-36">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle bg-black border-none">❮</a> 
+              <a href="#slide3" class="btn btn-circle border-none bg-black">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="hero h-[500px]" style="background-image: url(images/banner3.png);">
+              <img src="images/Rectangle 5.png" alt="">
+              <div class="hero-overlay bg-opacity-0"></div>
+              <div class="hero-content text-center text-neutral-content w-full">
+                <div>
+                  <h1 class="-mt-40 mb-1 text-7xl font-extrabold text-[#FFF]">Exotic tastes at your <br> doorstep</h1>
+                  <p class="mb-5 text-xl text-[#F3F3F3]">We supply highly quality organic products</p>
+                  <button class="btn text-xl text-white bg-[#F85559] border-none w-36">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle bg-black border-none">❮</a> 
+              <a href="#slide4" class="btn btn-circle border-none bg-black">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full">
+            <div class="hero h-[500px]" style="background-image: url(images/banner4.png);">
+              <img src="images/Rectangle 5.png" alt="">
+              <div class="hero-overlay bg-opacity-0"></div>
+              <div class="hero-content text-center text-neutral-content w-full">
+                <div>
+                  <h1 class="-mt-40 mb-1 text-7xl font-extrabold text-[#FFF]">Exotic tastes at your <br> doorstep</h1>
+                  <p class="mb-5 text-xl text-[#F3F3F3]">We supply highly quality organic products</p>
+                  <button class="btn text-xl text-white bg-[#F85559] border-none w-36">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle bg-black border-none">❮</a> 
+              <a href="#slide1" class="btn btn-circle border-none bg-black">❯</a>
+            </div>
+          </div> 
+          
         </div> 
     </header>
     <main>
